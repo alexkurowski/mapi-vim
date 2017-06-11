@@ -41,7 +41,7 @@ let s:cterm0B = "02"
 let s:cterm0C = "06"
 let s:cterm0D = "04"
 let s:cterm0E = "05"
-if exists('mapicolorspace') && mapicolorspace == "256"
+if exists('g:mapicolorspace') && g:mapicolorspace == "256"
   let s:cterm01 = "18"
   let s:cterm02 = "19"
   let s:cterm04 = "20"
@@ -60,7 +60,7 @@ endif
 " Theme setup
 hi clear
 syntax reset
-let g:colors_name = "Mapi"
+let g:colors_name = "mapi"
 
 " Highlighting function
 fun <sid>hi(group, guifg, guibg, ctermfg, ctermbg, attr)
