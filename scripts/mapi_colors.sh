@@ -1,29 +1,12 @@
 #!/bin/sh
 # base16-shell (https://github.com/chriskempson/base16-shell)
 # Base16 Shell template by Chris Kempson (http://chriskempson.com)
-# 3024 scheme by Jan T. Sott (http://github.com/idleberg)
+# mapi scheme by Alex Kurowski (http://github.com/mapisoft)
 
 # This script doesn't support linux console (use 'vconsole' template instead)
 if [ "${TERM%%-*}" = 'linux' ]; then
     return 2>/dev/null || exit 0
 fi
-
-base00="11/11/1a" # background
-base01="18/18/24" # highlighted background
-base02="2a/2a/30" # normal status line & line numbers
-base03="44/44/4f" # comments
-base04="fd/fd/ff" # normal status line foreground & ??
-base05="fd/fd/ff" # normal foreground
-base06="fd/fd/ff" # color of files in NerdTree ??
-base07="88/88/bb" # special words 'return' & variable names
-base08="55/55/77" # minus in diffs
-base09="ff/fc/cc" # booleans
-base0A="88/88/bb" # math & symbols
-base0B="bb/bb/ee" # plus in diffs, executibles, symbols and "/'
-base0C="bb/bb/ee" # strings, function names
-base0D="88/88/bb" # 'import', 'alias', folders
-base0E="88/88/bb" # 'def', 'if', 'end'
-base0F="88/88/bb" # also symbols
 
 base00="11/11/1a" # background
 base01="18/18/24" # highlighted background

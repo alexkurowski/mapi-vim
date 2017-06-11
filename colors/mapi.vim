@@ -1,33 +1,33 @@
-" Base2Tone_EveningDark (https://github.com/chriskempson/base16)
-" Scheme: by Bram de Haan, adapted from DuoTone themes by Simurai (http://simurai.com/projects/2016/01/01/duotone-themes)
+" mapi
+" Scheme: by Alex Kurowski, inspired by Bram de Haan, adapted from DuoTone themes by Simurai (http://simurai.com/projects/2016/01/01/duotone-themes)
 
 " This enables the coresponding base16-shell script to run so that
 " :colorscheme works in terminals supported by base16-shell scripts
-" User must set this variable in .vimrc
-"   let g:base2_shell_path='~/.vim/bundle/Base2Tone-vim/scripts'
+" You must set this variable in .vimrc:
+"   let g:mapi_shell_path='~/.vim/bundle/mapi-vim/scripts'
 if !has('gui_running')
-  if exists("g:base2_shell_path")
-    execute "silent !/bin/sh ".g:base2_shell_path."/Base2Tone_NightDark.sh"
+  if exists("g:mapi_shell_path")
+    execute "silent !/bin/sh ".g:mapi_shell_path."/mapi_colors.sh"
   endif
 endif
-"   let g:base2_shell_path='~/.vim/bundle/Base2Tone-vim/scripts'
+
 " GUI color definitions
 let s:gui00 = "11111a"
-let s:gui01 = "161622"
-let s:gui02 = "555557"
-let s:gui03 = "676769"
-let s:gui04 = "777779"
-let s:gui05 = "f0f0f0"
+let s:gui01 = "181824"
+let s:gui02 = "2a2a30"
+let s:gui03 = "44444f"
+let s:gui04 = "fdfdff"
+let s:gui05 = "fdfdff"
 let s:gui06 = "fdfdff"
-let s:gui07 = "ffffff"
-let s:gui08 = "555566"
-let s:gui09 = "9999a2"
-let s:gui0A = "eeeeee"
-let s:gui0B = "9999ba"
-let s:gui0C = "ccccdf"
-let s:gui0D = "bbbbbb"
-let s:gui0E = "ccccdf"
-let s:gui0F = "9999a2"
+let s:gui07 = "8888bb"
+let s:gui08 = "555577"
+let s:gui09 = "ffffcc"
+let s:gui0A = "8888bb"
+let s:gui0B = "ffcc88"
+let s:gui0C = "ffffcc"
+let s:gui0D = "8888bb"
+let s:gui0E = "8888bb"
+let s:gui0F = "ffffcc"
 
 " Terminal color definitions
 let s:cterm00 = "00"
@@ -41,7 +41,7 @@ let s:cterm0B = "02"
 let s:cterm0C = "06"
 let s:cterm0D = "04"
 let s:cterm0E = "05"
-if exists('base2colorspace') && base2colorspace == "256"
+if exists('colorspace') && base2colorspace == "256"
   let s:cterm01 = "18"
   let s:cterm02 = "19"
   let s:cterm04 = "20"
@@ -60,7 +60,7 @@ endif
 " Theme setup
 hi clear
 syntax reset
-let g:colors_name = "Base2Tone_EveningDark"
+let g:colors_name = "Mapi"
 
 " Highlighting function
 fun <sid>hi(group, guifg, guibg, ctermfg, ctermbg, attr)
