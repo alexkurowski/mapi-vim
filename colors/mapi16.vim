@@ -18,6 +18,8 @@ let s:col4 = "4"   " #87d7ff - Blue
 
 " Highlighting functions
 fun <sid>hi(group, fg, bg)
+  exec "hi ctermfg=none ctermbg=none cterm=none"
+
   if a:fg != ""
     exec "hi " . a:group . " ctermfg=" . a:fg
   endif
@@ -134,10 +136,10 @@ call <sid>hi("cssColor",        s:cmnt, "")
 call <sid>hi("cssIdentifier",   s:col4, "")
 
 " Diff highlighting
-call <sid>hi("DiffAdd",      s:col2, s:hidn)
-call <sid>hi("DiffChange",   s:cmnt, s:hidn)
-call <sid>hi("DiffDelete",   s:col1, s:hidn)
-call <sid>hi("DiffText",     s:scnd, s:hidn)
+call <sid>hi("DiffAdd",      s:col2, s:col0)
+call <sid>hi("DiffChange",   s:col3, s:col0)
+call <sid>hi("DiffDelete",   s:col1, s:col0)
+call <sid>hi("DiffText",     s:scnd, s:col0)
 call <sid>hi("DiffAdded",    s:col2, s:col0)
 call <sid>hi("DiffFile",     s:col1, s:col0)
 call <sid>hi("DiffNewFile",  s:col2, s:col0)
@@ -149,10 +151,10 @@ call <sid>hi("gitCommitOverflow",  s:col1, "")
 call <sid>hi("gitCommitSummary",   s:col2, "")
 
 " GitGutter highlighting
-call <sid>hi("GitGutterAdd",           s:col2, s:hidn)
-call <sid>hi("GitGutterChange",        s:scnd, s:hidn)
-call <sid>hi("GitGutterDelete",        s:col1, s:hidn)
-call <sid>hi("GitGutterChangeDelete",  s:scnd, s:hidn)
+call <sid>hi("GitGutterAdd",           s:col2, "")
+call <sid>hi("GitGutterChange",        s:scnd, "")
+call <sid>hi("GitGutterDelete",        s:col1, "")
+call <sid>hi("GitGutterChangeDelete",  s:scnd, "")
 
 " HTML highlighting
 call <sid>hi("htmlBold",    s:col3, "")
