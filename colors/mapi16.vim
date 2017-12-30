@@ -18,7 +18,7 @@ let s:col4 = "4"   " #87d7ff - Blue
 
 " Highlighting functions
 fun <sid>hi(group, fg, bg)
-  exec "hi ctermfg=none ctermbg=none cterm=none"
+  exec "hi " . a:group . " ctermfg=none ctermbg=none cterm=none"
 
   if a:fg != ""
     exec "hi " . a:group . " ctermfg=" . a:fg
