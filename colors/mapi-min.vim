@@ -81,9 +81,9 @@ call <sid>hi("CursorLine",    "",     s:hidn)
 call <sid>hi("CursorLineNr",  s:cmnt, s:col0)
 call <sid>hi("PMenu",         s:scnd, s:hidn)
 call <sid>hi("PMenuSel",      s:hidn, s:scnd)
-call <sid>hi("TabLine",       s:cmnt, s:hidn)
-call <sid>hi("TabLineFill",   s:cmnt, s:hidn)
-call <sid>hi("TabLineSel",    s:col2, s:hidn)
+call <sid>hi("TabLine",       s:cmnt, s:col0)
+call <sid>hi("TabLineFill",   s:cmnt, s:col0)
+call <sid>hi("TabLineSel",    s:col2, s:col0)
 
 " Standard syntax highlighting
 call <sid>hi("Boolean",      s:col3, "")
