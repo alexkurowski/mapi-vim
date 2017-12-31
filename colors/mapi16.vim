@@ -219,6 +219,7 @@ call <sid>hi("sassClassChar",     s:col4, "")
 call <sid>hi("sassInclude",       s:scnd, "")
 call <sid>hi("sassMixing",        s:scnd, "")
 call <sid>hi("sassMixinName",     s:scnd, "")
+call <sid>hi("sassFunction",      s:col3, "")
 call <sid>hi("sassVariable",      s:col3, "")
 call <sid>hi("sassCssAttribute",  s:col3, "")
 
