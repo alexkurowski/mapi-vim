@@ -129,11 +129,12 @@ call <sid>hi("csContextualStatement",   s:scnd, "")
 call <sid>hi("csNewDecleration",        s:prim, "")
 
 " CSS highlighting
-call <sid>hi("cssBraces",       s:scnd, "")
-call <sid>hi("cssClassName",    s:col4, "")
-call <sid>hi("cssClassNameDot", s:col4, "")
-call <sid>hi("cssColor",        s:col3, "")
-call <sid>hi("cssIdentifier",   s:col4, "")
+call <sid>hi("cssBraces",         s:scnd, "")
+call <sid>hi("cssClassName",      s:col4, "")
+call <sid>hi("cssClassNameDot",   s:col4, "")
+call <sid>hi("cssColor",          s:col3, "")
+call <sid>hi("cssIdentifier",     s:col4, "")
+call <sid>hi("cssUnitDecorators", s:col3, "")
 
 " Diff highlighting
 call <sid>hi("DiffAdd",      s:col2, s:col0)
