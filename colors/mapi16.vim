@@ -132,7 +132,7 @@ call <sid>hi("csNewDecleration",        s:prim, "")
 call <sid>hi("cssBraces",       s:scnd, "")
 call <sid>hi("cssClassName",    s:col4, "")
 call <sid>hi("cssClassNameDot", s:col4, "")
-call <sid>hi("cssColor",        s:cmnt, "")
+call <sid>hi("cssColor",        s:col3, "")
 call <sid>hi("cssIdentifier",   s:col4, "")
 
 " Diff highlighting
