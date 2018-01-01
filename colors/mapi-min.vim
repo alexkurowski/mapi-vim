@@ -164,7 +164,7 @@ call <sid>hi("htmlEndTag",  s:prim, "")
 call <sid>hi("htmlTag",     s:prim, "")
 
 " JavaScript highlighting
-call <sid>hi("javaScript",        s:col3, "")
+call <sid>hi("javaScript",        s:prim, "")
 call <sid>hi("javaScriptBraces",  s:prim, "")
 call <sid>hi("javaScriptNumber",  s:col3, "")
 call <sid>hi("jsStorageClass",    s:col4, "")
