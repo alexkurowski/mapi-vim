@@ -5,8 +5,8 @@ hi clear
 syntax reset
 let g:colors_name = "mapi-min"
 
-let s:prim = "255" " Primary color
-let s:scnd = "245" " Secondary color
+let s:prim = "7"   " Primary color
+let s:scnd = "8"   " Secondary color
 let s:cmnt = "240" " Comments
 let s:hidn = "235" " Barely visible
 
