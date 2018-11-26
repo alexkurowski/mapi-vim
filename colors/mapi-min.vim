@@ -8,7 +8,7 @@ let g:colors_name = "mapi-min"
 let s:prim = "7"   " Primary color
 let s:scnd = "8"   " Secondary color
 let s:cmnt = "240" " Comments
-let s:hidn = "235" " Barely visible
+let s:hidn = "236" " Barely visible
 
 let s:col0 = "0"   " #1c1c20 - Background
 let s:col1 = "1"   " #ff4c95 - Red
@@ -84,6 +84,7 @@ call <sid>hi("PMenuSel",      s:hidn, s:scnd)
 call <sid>hi("TabLine",       s:cmnt, s:col0)
 call <sid>hi("TabLineFill",   s:cmnt, s:col0)
 call <sid>hi("TabLineSel",    s:col2, s:col0)
+call <sid>hi("Whitespace",    s:hidn, s:col0)
 
 " Standard syntax highlighting
 call <sid>hi("Boolean",      s:col3, "")
