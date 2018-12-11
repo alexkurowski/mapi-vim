@@ -225,6 +225,10 @@ call <sid>hi("sassFunction",      s:col3, "")
 call <sid>hi("sassVariable",      s:col3, "")
 call <sid>hi("sassCssAttribute",  s:col3, "")
 
+" Haxe highlighting
+call <sid>hi("haxeStorageClass",  s:col4, "")
+call <sid>hi("haxeFunction",      s:col4, "")
+
 " Signify highlighting
 call <sid>hi("SignifySignAdd",     s:col2, s:hidn)
 call <sid>hi("SignifySignChange",  s:scnd, s:hidn)
