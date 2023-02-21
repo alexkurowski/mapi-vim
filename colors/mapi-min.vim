@@ -1,20 +1,34 @@
 " mapi-min
 " Scheme: by Alex Kurowski, based on Base16, but with less colors
+" TODO: test
 
 hi clear
 syntax reset
 let g:colors_name = "mapi-min"
 
-let s:prim = "7"   " Primary color
-let s:scnd = "8"   " Secondary color
-let s:cmnt = "240" " Comments
-let s:hidn = "236" " Barely visible
+let s:prim = "15"  " Primary color
+let s:scnd = "246" " Secondary color
+let s:cmnt = "242" " Comments
+let s:hidn = "238" " Barely visible
 
 let s:col0 = "0"   " #1c1c20 - Background
 let s:col1 = "1"   " #ff4c95 - Red
 let s:col2 = "2"   " #9eff3c - Green
 let s:col3 = "3"   " #d7d787 - Yellow
 let s:col4 = "4"   " #87d7ff - Blue
+
+if &background ==# 'light'
+  let s:prim = "0"   " Primary color
+  let s:scnd = "240" " Secondary color
+  let s:cmnt = "242" " Comments
+  let s:hidn = "253" " Barely visible
+
+  let s:col0 = "15"  " Background
+  let s:col1 = "9"   " Red
+  let s:col2 = "10"  " Green
+  let s:col3 = "11"  " Yellow
+  let s:col4 = "12"  " Blue
+end
 
 " Highlighting functions
 fun <sid>hi(group, fg, bg)
