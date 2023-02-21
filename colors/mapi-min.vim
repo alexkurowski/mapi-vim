@@ -1,6 +1,5 @@
 " mapi-min
 " Scheme: by Alex Kurowski, based on Base16, but with less colors
-" TODO: test
 
 hi clear
 syntax reset
@@ -24,10 +23,6 @@ if &background ==# 'light'
   let s:hidn = "253" " Barely visible
 
   let s:col0 = "15"  " Background
-  let s:col1 = "9"   " Red
-  let s:col2 = "10"  " Green
-  let s:col3 = "11"  " Yellow
-  let s:col4 = "12"  " Blue
 end
 
 " Highlighting functions
